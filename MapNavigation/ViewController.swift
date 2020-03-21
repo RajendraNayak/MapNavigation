@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         }
         
         self.config()
+        print("chakali")
     }
 
     private func config() {
@@ -87,6 +88,10 @@ class ViewController: UIViewController {
 
         // 4. Present the alert.
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
 }
 
