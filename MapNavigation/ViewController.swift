@@ -19,8 +19,8 @@ class ViewController: UIViewController {
     var destination: MKMapItem?
     private lazy var locationManager: CLLocationManager = {
         let locationManager = CLLocationManager()
-        locationManager.activityType = .fitness
-        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        locationManager.activityType = .airborne
+        locationManager.desiredAccuracy = 25
         return locationManager
     }()
    
@@ -35,7 +35,13 @@ class ViewController: UIViewController {
             self?.instructionLabel1.text = instruction
         }
         
-        self.config()
+        //self.config()
+        print("Koraj")
+        
+    }
+    
+    func printName() {
+        print("Koraj1")
     }
 
     private func config() {
